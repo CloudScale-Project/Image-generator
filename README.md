@@ -7,6 +7,7 @@ You will find licensing information on the readme files at each directory.
 
 ## Usage
 
+
 1. Change current working directory to ```ImgFiles```:
 
   ```
@@ -25,8 +26,18 @@ You will find licensing information on the readme files at each directory.
   $ cd ../
   ```
 
-4. Create directory ```generated_images``` and run ```populate_images``` script:
+4. Create directory ```generated_images``` 
+
+5. Edit file ```populate_images``` and set the following variables according to your needs:
+
+  ```$NUM_ITEMS``` - How many items/books are in database (default: 10000)
+
+  ```$DEST_DIR``` - Directory name where to save generated images
+
+  ```$GEN_CMD``` - Path to ```tpcwIMG``` program for generating the images (default: ImgFiles/tpcwIMG)
+
+6. Generate images with executing the following command:
 
   ```
-  $ mkdir generated_images; ./populate_images
+  $ ./populate_images
   ```
